@@ -1,0 +1,79 @@
+exports[`class LevelList extends /* istanbul ignore next */_react.Component {
+
+	constructor(props) {
+		super(props);
+		//this.state = { greetings: ['Jim', 'Sally', 'Bender']};
+		this.state = { greetings: this.props.greetings };
+		this.addGreeting = this.addGreeting.bind(this);
+		this.removeGreeting = this.removeGreeting.bind(this);
+		this.updateGreeting = this.updateGreeting.bind(this);
+	}
+
+
+	renderGreetings() {
+		if (this.state.greetings) {
+			return this.state.greetings.map((name, index) =>
+			/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_LevelKeyValue2.default, /* istanbul ignore next */{
+				key: index,
+				index: index,
+				name: name,
+				removeGreeting: this.removeGreeting,
+				updateGreeting: this.updateGreeting,
+				restoreOriginal: this.restoreOriginal, __source: { fileName: _jsxFileName, lineNumber: 21 }, __self: this }));
+
+
+		}
+	}
+
+	addGreeting(newName) {
+		this.setState({ greetings: [...this.state.greetings, newName] });
+	}
+	removeGreeting(removeName) {
+		const filteredGreetings = this.state.greetings.filter(name => {
+			return name !== removeName;});
+
+		this.setState({ greetings: filteredGreetings });
+	}
+	updateGreeting(originalName, changedName) {
+		const changedGreetings = this.state.greetings;
+
+		for (var k = 0; k < changedGreetings.length; k++) {
+			if (originalName === changedGreetings[k]) {
+				changedGreetings[k] = changedName;
+			}
+		}
+		this.setState({ greetings: changedGreetings });
+	}
+
+
+	render() {
+		return (
+
+			/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ className: 'LevelList', __source: { fileName: _jsxFileName, lineNumber: 57 }, __self: this },
+				/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'pre', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 58 }, __self: this }, JSON.stringify(this.state, null, '  ')),
+				this.renderGreetings(),
+				/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_AddKeyValue2.default, /* istanbul ignore next */{
+					addGreeting: this.addGreeting, __source: { fileName: _jsxFileName, lineNumber: 60 }, __self: this })));
+
+
+
+	}} renders and matches our snapshot 1`] = `
+<div
+  className="LevelList">
+  <pre>
+    {}
+  </pre>
+  <div
+    className="AddKeyValue">
+    <input
+      onChange={[Function]}
+      type="text"
+      value="" />
+      
+    <button
+      onClick={[Function]}>
+      Add Item
+    </button>
+  </div>
+</div>
+`;

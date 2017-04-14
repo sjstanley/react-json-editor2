@@ -1,0 +1,26 @@
+.LevelKeyValue {
+  /*border: 2px solid black;*/
+  /*text-align: center;*/
+  background: #f5f5f5;
+  /*color: #333;*/
+  /*display: none;*/
+  margin-left: 10px;
+  padding: 10px;
+  border-left: 1px dotted #ddd;
+}
+
+.compoundAttr > .LevelKeyValue {
+	display: block;
+}
+
+.objectAttr {
+	float: left;
+}
+
+.attrName {
+  font-style: italic;
+}
+
+.attrValue {
+  margin-left: 5px;
+}

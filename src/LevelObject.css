@@ -1,0 +1,7 @@
+.LevelObject {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #00D8FF;
+  background: #DDEEFF;
+  float: left;
+}

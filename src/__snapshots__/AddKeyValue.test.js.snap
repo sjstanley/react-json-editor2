@@ -1,0 +1,83 @@
+exports[`class AddKeyValue extends /* istanbul ignore next */_react.Component {
+	constructor(props) {
+		super(props);
+		this.state = { greetingName: '' };
+		this.handleUpdate = this.handleUpdate.bind(this);
+		this.addGreeting = this.addGreeting.bind(this);
+	}
+	handleUpdate(event) {
+		this.setState({ greetingName: event.target.value });
+	}
+	addGreeting() {
+		this.props.addGreeting(this.state.greetingName);
+		this.setState({ greetingName: '' });
+	}
+
+	render() {
+		return (
+			/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ className: 'AddKeyValue', __source: { fileName: _jsxFileName, lineNumber: 21 }, __self: this },
+				/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'input', /* istanbul ignore next */{
+					type: 'text',
+					onChange: this.handleUpdate,
+					value: this.state.greetingName, __source: { fileName: _jsxFileName, lineNumber: 22 }, __self: this }), /* istanbul ignore next */'\xA0\xA0',
+
+
+				/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'button', /* istanbul ignore next */{ onClick: this.addGreeting, __source: { fileName: _jsxFileName, lineNumber: 28 }, __self: this }, /* istanbul ignore next */'Add Item')));
+
+
+	}} renders and matches our snapshot 1`] = `
+<div
+  className="AddKeyValue">
+  <input
+    onChange={[Function]}
+    type="text"
+    value="" />
+    
+  <button
+    onClick={[Function]}>
+    Add Item
+  </button>
+</div>
+`;
+
+exports[`class AddKeyValue extends /* istanbul ignore next */_react.Component {
+	constructor(props) {
+		super(props);
+		this.state = { greetingName: '' };
+		this.handleUpdate = this.handleUpdate.bind(this);
+		this.addGreeting = this.addGreeting.bind(this);
+	}
+	handleUpdate(event) {
+		this.setState({ greetingName: event.target.value });
+	}
+	addGreeting() {
+		this.props.addGreeting(this.state.greetingName);
+		this.setState({ greetingName: '' });
+	}
+
+	render() {
+		return (
+			/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ className: 'AddKeyValue', __source: { fileName: _jsxFileName, lineNumber: 21 }, __self: this },
+				/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'input', /* istanbul ignore next */{
+					type: 'text',
+					onChange: this.handleUpdate,
+					value: this.state.greetingName, __source: { fileName: _jsxFileName, lineNumber: 22 }, __self: this }), /* istanbul ignore next */'  ',
+
+
+				/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'button', /* istanbul ignore next */{ onClick: this.addGreeting, __source: { fileName: _jsxFileName, lineNumber: 28 }, __self: this }, /* istanbul ignore next */'Add Item')));
+
+
+	}} renders and matches our snapshot 1`] = `
+<div
+  className="AddKeyValue">
+  <input
+    onChange={[Function]}
+    type="text"
+    value="" />
+    
+  <button
+    onClick={[Function]}>
+    Add Item
+  </button>
+</div>
+`;
